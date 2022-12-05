@@ -1,0 +1,41 @@
+.nav-logo img {
+    height: 90px;
+    margin-top: -10px;
+}
+
+.nav-content {
+    align-items: center;
+    padding-left: 150px;
+    padding-top: 25px;
+}
+
+.nav-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-content li {
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+.nav-content li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav-content li a:hover {
+    background-color: #111111;
+}
+
+.nav-icons {
+    text-align: right;
+    padding-top: 25px;
+}
