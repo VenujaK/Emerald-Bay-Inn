@@ -1,6 +1,9 @@
+/* Nav bar */
+
 .nav-logo img {
     height: 90px;
     margin-top: -10px;
+    float: left;
 }
 
 .nav-content {
@@ -38,4 +41,15 @@
 .nav-icons {
     text-align: right;
     padding-top: 25px;
+}
+
+
+/* Nav bar end*/
+
+
+/* Hero Section */
+
+.hero {
+    background-image: url(../Images/HeroBanner.png) no-repeat top center;
+    background-color: #111111;
 }
