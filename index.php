@@ -13,29 +13,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col nav-logo">
-                        <img src="./Images/Emerald Bay Inn.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-6 nav-content ">
-                        <ul>
-                            <li>Home</li>
-                            <li>Accomodations</li>
-                            <li>Offers</li>
-                            <li>Gallery</li>
-                            <li>Services</li>
-                        </ul>
-                    </div>
-                    <div class="col nav-icons">
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                    </div>
-                </div>
-        </nav>
-    </header>
-    <!-- Nav bar ends -->
+<?php @include('Header.php') ?>
     <!-- Hero section -->
     <div class="container  hero">
         <img src="./Images/HeroBanner.png" alt="">
