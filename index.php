@@ -18,7 +18,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col nav-logo">
-                        <img src="./Images/Emerald Bay Inn.png" alt="">
+                        <img src="./Images/Emerald Bay Inn.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-6 nav-content ">
                         <ul>
@@ -69,53 +69,21 @@
                     </div>
                 </div>
             </div>
+            <div class="col d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://island.lk/wp-content/uploads/2022/04/Granbell-Hotel.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Carousel -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </li>
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Manage</a></li>
 
-        </ul>
-        <p>&copy;2022 Emerald Bay Inn | All Rights Reserved</p>
-    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 </html>
