@@ -46,3 +46,12 @@
  .card {
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
  }
+ 
+ .btn {
+     color: var(--main-color);
+ }
+ 
+ .btn:hover {
+     color: white;
+     opacity: 80%;
+ }
