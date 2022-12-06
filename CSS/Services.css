@@ -24,16 +24,11 @@ html::-webkit-scrollbar-thumb {
     background: var(--main-color);
 }
 
-.card {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 100px;
-    padding-top: 20px;
-    border: none;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+.row {
+    margin-top: 150px;
+    width: 100%;
 }
 
-.card img {
-    border-radius: 8px;
+.card {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }

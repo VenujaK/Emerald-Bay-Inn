@@ -29,6 +29,7 @@
                     <img src="./Images/carousel 1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -37,6 +38,7 @@
                     <img src="./Images/carousel 2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -45,6 +47,7 @@
                     <img src="./Images/carousel 3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -53,6 +56,7 @@
                     <img src="http://island.lk/wp-content/uploads/2022/04/Granbell-Hotel.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" align="center" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>

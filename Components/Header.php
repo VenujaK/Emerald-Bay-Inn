@@ -58,9 +58,9 @@
                         <ul>
                             <li><a href="../Emerald-Bay-Inn/index.php">Home</a></li>
                             <li><a href="../Emerald-Bay-Inn/Accomadations.php">Accomodations</a></li>
-                            <li><a href="#">Offers</a></li>
+                            <li><a href="../Emerald-Bay-Inn/Offers.php"">Offers</a></li>
                             <li><a href="../Emerald-Bay-Inn/GalleryPage.php">Gallery</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="../Emerald-Bay-Inn/Services.php">Services</a></li>
                            
                         </ul>
                     </div>

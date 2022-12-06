@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Dots&display=swap');
+ :root {
+    --main-color: #FF9A00;
+    --text-color: #868484;
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+.coupon {
+    /* Rounded border */
+    margin: 0 auto;
+    margin-top: 50px;
+    /* Center the coupon */
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+.coupon-Image {
+    border-radius: 8px;
+}
+
+.container {
+    padding: 2px 16px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.promo {
+    background: #ccc;
+    padding: 3px;
+}
+
+.expire {
+    color: red;
+}
+
+h3 {
+    color: var(--main-color);
+}
+
+.txt {
+    color: var(--text-color);
+}

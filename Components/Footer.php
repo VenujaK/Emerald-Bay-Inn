@@ -37,6 +37,7 @@
  
  .social-icon__link:hover {
      transform: translateY(-10px);
+     color: var(--main-color);
  }
  
  .menu__link {
@@ -52,6 +53,7 @@
  
  .menu__link:hover {
      opacity: 1;
+     color: var(--main-color);
  }
  
  .footer p {
