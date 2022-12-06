@@ -13,7 +13,8 @@
 </head>
 
 <body>
-<?php @include('Header.php') ?>
+<?php @include("./Components/Header.php") ?>
+    <!-- Nav bar ends -->
     <!-- Hero section -->
     <div class="container  hero">
         <img src="./Images/HeroBanner.png" alt="">
@@ -59,7 +60,7 @@
     </div>
 
     <!-- Carousel -->
-
+    <?php @include("./Components/Footer.php") ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 

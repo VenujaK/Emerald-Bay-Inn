@@ -31,6 +31,11 @@
      object-fit: cover;
  }
  
+ .hero img {
+     margin-top: 50px;
+     width: 100%;
+ }
+ 
  .carousel-heading {
      text-align: center;
      font-weight: 600;

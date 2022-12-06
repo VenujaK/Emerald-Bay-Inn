@@ -20,24 +20,25 @@
      overflow: hidden;
  }
  
- .nav-content li {
+ .nav-content li a{
      float: left;
      text-align: center;
      margin-right: 15px;
      font-weight: 700;
      color: #9e9c9c;
+     text-decoration: none;
  }
- 
+/*  
  .nav-content li a {
      display: block;
      color: white;
      text-align: center;
      padding: 16px;
      text-decoration: none;
- }
+ } */
  
  .nav-content li a:hover {
-     background-color: #111111;
+     color: var(--main-color);
  }
  
  .nav-icons {
@@ -55,11 +56,12 @@
                     </div>
                     <div class="col-6 nav-content ">
                         <ul>
-                            <li>Home</li>
-                            <li>Accomodations</li>
-                            <li>Offers</li>
-                            <li>Gallery</li>
-                            <li>Services</li>
+                            <li><a href="../Emerald-Bay-Inn/index.php">Home</a></li>
+                            <li><a href="../Emerald-Bay-Inn/Accomadations.php">Accomodations</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="../Emerald-Bay-Inn/GalleryPage.php">Gallery</a></li>
+                            <li><a href="#">Services</a></li>
+                           
                         </ul>
                     </div>
                     <div class="col nav-icons">

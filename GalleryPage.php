@@ -13,28 +13,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col nav-logo">
-                        <img src="./Images/Emerald Bay Inn.png" alt="">
-                    </div>
-                    <div class="col-6 nav-content ">
-                        <ul>
-                            <li>Home</li>
-                            <li>Accomodations</li>
-                            <li>Offers</li>
-                            <li>Gallery</li>
-                            <li>Services</li>
-                        </ul>
-                    </div>
-                    <div class="col nav-icons">
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                    </div>
-                </div>
-        </nav>
-    </header>
+<?php @include("./Components/Header.php") ?>
     <!-- Gallery -->
     <div class="row gallery" style="padding: 15px;">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -67,45 +46,7 @@
     </div>
     <!-- Gallery -->
     <!-- Footer -->
-    <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </li>
-            <li class="social-icon__item">
-                <a class="social-icon__link" href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-        </ul>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Manage</a></li>
-
-        </ul>
-        <p>&copy;2022 Emerald Bay Inn | All Rights Reserved</p>
-    </footer>
+    <?php @include("./Components/Footer.php") ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
