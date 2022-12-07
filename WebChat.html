@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <?php
+if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+{
+    $ip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+{
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    $ip = $_SERVER['REMOTE_ADDR'];
+}
+$dp = $ip;
+$ua = $_SERVER['HTTP_USER_AGENT']; //User agent, e.g firefox, chrome, ie, etc
+$date = date("F j, Y, g:i a");
+$time = time();
+
+$tracker = "[ $date ] User visited the website.
+  IP Address: $dp 
+ User Agent: $ua 
+
+
+";
+$fp = fopen("logs.txt", 'a+'); //save to file 'logs.txt'
+fwrite($fp, $tracker); //write to the file
+fclose($fp); //close the file
+
+?> -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit Queries</title>
+    <link rel="stylesheet" href="./CSS/WebChat.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <h2>Submit Queries</h2>
+    </header>
+
+    <div id="chat">
+        <!-- messages will display here -->
+        <ul id="messages"></ul>
+
+        <!-- form to send message -->
+        <form id="message-form">
+            <input id="message-input" type="text" />
+            <button id="message-btn" type="submit">Send</button>
+        </form>
+    </div>
+    <!-- scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="./JS/Webchat.js"></script>
+
+</body>
+
+</html>
