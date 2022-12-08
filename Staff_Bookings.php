@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products</title>
     <link rel="stylesheet" href="./CSS/View_Rooms.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <style>
-        .formbtns{
+        .formbtns {
             margin-left: 350px;
         }
     </style>
 </head>
+
 <body>
-<?php
+    <?php
 
 
-@include 'Config.php';
-?>
-  <?php @include("./Components/Header.php") ?>
+    @include 'Config.php';
+    ?>
+    <?php @include("./Components/Header.php") ?>
 
 
 
-      <?php
-      
-   //   Queries
-      $select = mysqli_query($conn, "SELECT * FROM rooms WHERE AVAILABILITY='yes'");
-      if (isset($_POST['Duluxe'])) {
-        $select = mysqli_query($conn, "SELECT * FROM rooms WHERE TYPE='Duluxe'");
-     };
-     if (isset($_POST['Luxury'])) {
-        $select = mysqli_query($conn, "SELECT * FROM rooms WHERE TYPE='Luxury'");
-     };
-     if (isset($_POST['Normal'])) {
-        $select = mysqli_query($conn, "SELECT * FROM rooms WHERE TYPE='Normal'");
-     };
-     if (isset($_POST['Villas'])) {
-        $select = mysqli_query($conn, "SELECT * FROM rooms WHERE TYPE='Villas'");
-     };
+    <?php
 
-    
+    //   Queries
+    $select = mysqli_query($conn, "SELECT * FROM bookings");
+    ?>
 
-      ?>
-      <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="formbtns">
-         <button name="Duluxe" class="btns"> Duluxe</button>
-         <button name="Luxury" class="btns"> Luxury</button>
-         <button name="Normal" class="btns"> Normal</button>
-         <button name="Villas" class="btns"> Villas</button>
-      </form>
-      <!-- Product table -->
-      <div class="products">
-         <table class="tblproduct">
+    <!-- Product table -->
+    <div class="products">
+        <table class="tblproduct">
             <form method="POST">
-            <thead>
-               <tr>
-                  <th>RID</th>
-                  <th>Availability</th>
-                  <th>Type</th>
-                  <th>AC / Non AC</th>
-                  <th>Price</th>
-               </tr>
-            </thead>
-            <?php while ($row = mysqli_fetch_assoc($select)) { ?>
-               <tr>
-                  <td><?php echo $row['RID']; ?></td>
-                  <td><?php echo $row['AVAILABILITY']; ?></td>
-                  <td><?php echo $row['TYPE'] ?>/-</td>
-                  <td><?php echo $row['AC'] ?>/-</td>
-                  <td><?php echo $row['PRICE'] ?>/-</td>
-                  <td>
-                     <a href="Client_Bookings.php?edit=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-edit"></i> Book </a>
-                     
-                  </td>
-               </tr>
-            <?php } ?>
-         </table>
-         </form>
-      </div>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>RNO</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>NIC</th>
+                        <th>Days</th>
+                    </tr>
+                </thead>
+                <?php while ($row = mysqli_fetch_assoc($select)) { ?>
+                    <tr>
+                        <td></td>
+                        <td><?php echo $row['RNO']; ?></td>
+                        <td><?php echo $row['CNAME']; ?></td>
+                        <td><?php echo $row['CNUMBER'] ?>/-</td>
+                        <td><?php echo $row['NIC'] ?>/-</td>
+                        <td><?php echo $row['CDAYS'] ?>/-</td>
 
-   </div>
+                    </tr>
+                <?php } ?>
+        </table>
+        </form>
+    </div>
+
+    </div>
 
 
 </body>

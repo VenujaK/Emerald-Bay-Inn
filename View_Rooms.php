@@ -25,11 +25,7 @@
    //   Queries
    $select = mysqli_query($conn, "SELECT * FROM rooms");
 
-   if (isset($_GET['delete'])) {
-      $id = $_GET['delete'];
-      mysqli_query($conn, "UPDATE rooms SET AVAILABILITY=0 WHERE pid = $id");
-      header('location:admin_page.php');
-   };
+   
    // Delete option
    if (isset($_GET['del'])) {
       $id = $_GET['del'];
