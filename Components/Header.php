@@ -45,6 +45,9 @@
      text-align: right;
      padding-top: 25px;
  }
+ nav{
+    background-color: white;
+ }
  /* Nav bar end*/
 </style>
 <header>
@@ -54,13 +57,15 @@
                     <div class="col nav-logo">
                         <img src="./Images/Emerald Bay Inn.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-6 nav-content ">
+                    <div class="col-7 nav-content ">
                         <ul>
                             <li><a href="../Emerald-Bay-Inn/index.php">Home</a></li>
                             <li><a href="../Emerald-Bay-Inn/Accomadations.php">Accomodations</a></li>
                             <li><a href="../Emerald-Bay-Inn/Offers.php"">Offers</a></li>
                             <li><a href="../Emerald-Bay-Inn/GalleryPage.php">Gallery</a></li>
                             <li><a href="../Emerald-Bay-Inn/Services.php">Services</a></li>
+                            <li><a href="../Emerald-Bay-Inn/Client_Bookings.php">Bookings</a></li>
+                            <li><a href="../Emerald-Bay-Inn/WebChat.html">Queries</a></li>
                            
                         </ul>
                     </div>

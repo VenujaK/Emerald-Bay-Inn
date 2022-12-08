@@ -1,16 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-:root {
-    --white-light: rgba(255, 255, 255, 0.5);
-    --alice-blue: #f8f9fa;
-    --main-color: #006DFF;
-    --gray: #ededed;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Dots&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+ :root {
+    --main-color: #FF9A00;
+    --text-color: #9e9c9c;
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+.nav-content {
+    font-size: 150%;
 }
 
 body {
@@ -19,7 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(213deg, #05fffb 7%, var(--main-color) 92%);
+    background-image: url(../Images/admin\ background.png);
 }
 
 .message {
@@ -27,7 +42,7 @@ body {
     position: absolute;
     top: 1%;
     left: 50%;
-    background: linear-gradient(213deg, #05fffb 7%, var(--main-color) 92%);
+    background: linear-gradient(213deg, #d5ff05 7%, var(--main-color) 92%);
     padding: 1.5rem 1rem;
     font-size: 2rem;
     color: rgb(255, 255, 255);
@@ -58,7 +73,7 @@ body {
     height: 3px;
     width: 30px;
     border-radius: 5px;
-    background: linear-gradient(213deg, #05fffb 7%, var(--main-color) 92%);
+    background: linear-gradient(213deg, #d5ff05 7%, var(--main-color) 92%);
 }
 
 .content form .user-details {
@@ -97,7 +112,7 @@ form .input-box span.details {
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
-    border: #006DFF 2px solid;
+    border: var(--main-color) 2px solid;
 }
 
 form .gender-details .gender-title {
@@ -156,14 +171,14 @@ form .button input {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background: linear-gradient(213deg, #05fffb 7%, var(--main-color) 92%);
+    background: linear-gradient(213deg, #d5ff05 7%, var(--main-color) 92%);
     position: relative;
     bottom: 10px;
 }
 
 form .button input:hover {
     /* transform: scale(0.99); */
-    background: linear-gradient(213deg, #05fffb 7%, var(--main-color) 92%);
+    background: linear-gradient(213deg, var(--main-color) 7%, #d5ff05 92%);
 }
 
 @media(max-width: 584px) {

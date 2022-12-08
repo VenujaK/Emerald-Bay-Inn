@@ -22,15 +22,8 @@ if (isset($_POST['ADD_ROOM'])) {
    }
 };
 
-// Delete option
-if (isset($_GET['del'])) {
-   $id = $_GET['del'];
-   mysqli_query($conn, "DELETE FROM rooms  WHERE RID = $id");
-   mysqli_query($conn, "ALTER TABLE products AUTO_INCREMENT = 1");
-   // ALTER TABLE products AUTO_INCREMENT = 1;
-   header('location:admin_page.php');
-};
-if (isset($_POST['view_products'])) {
+
+if (isset($_POST['view_rooms'])) {
   header('location:View_Rooms.php');
 }
 
@@ -61,7 +54,7 @@ if (isset($_POST['view_products'])) {
         <div class="user-details">
           <div class="input-box">
             <span class="details">Room Availability</span>
-            <input type="text" placeholder="enter product price" name="r_availability" >
+            <input type="text" placeholder="enter yes or no" name="r_availability" >
           </div>
           <div class="input-box">
             <span class="details">Room Type</span>
@@ -75,18 +68,18 @@ if (isset($_POST['view_products'])) {
           
           <div class="input-box">
             <span class="details">AC/ NON AC</span>
-            <input type="text" placeholder="enter product Description" name="r_ac" >
+            <input type="text" placeholder="enter yes or no" name="r_ac" >
           </div>
           <div class="input-box">
             <span class="details">Room Price</span>
-            <input type="text" placeholder="enter product quantity" name="r_price" >
+            <input type="text" placeholder="enter room price" name="r_price" >
           </div>
           
         </div>
         
         <div class="button">
-          <input type="submit" name="ADD_ROOM" value="Add product">
-      <input type="submit" name="view_products" onclick="ViewAllProducts();" value="View Products">
+          <input type="submit" name="ADD_ROOM" value="Add Room">
+      <input type="submit" name="view_rooms" onclick="ViewAllRooms();" value="View All Rooms">
           
         </div>
       </form>
@@ -97,8 +90,8 @@ if (isset($_POST['view_products'])) {
    
 </body>
 <script>
-   function ViewAllProducts(){
-      window.location.href =  "/Daisy_Wardrobe/View_products.php";
+   function ViewAllRooms(){
+      window.location.href =  "./Emerald-Bay-Inn/View_Rooms.php";
    }
 </script>
 </html>

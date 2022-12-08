@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products</title>
-    <link rel="stylesheet" href="./CSS/View_Rooms.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>All Products</title>
+   <link rel="stylesheet" href="./CSS/View_Rooms.css">
    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   <link rel="stylesheet" href="./CSS/Style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
-<?php
+   <?php
 
 
-@include 'Config.php';
-?>
+   @include 'Config.php';
+   ?>
+   <?php @include("./Components/Header.php") ?>
+   <?php
 
-
-
-      <?php
-      
    //   Queries
-      $select = mysqli_query($conn, "SELECT * FROM rooms");
-     
+   $select = mysqli_query($conn, "SELECT * FROM rooms");
 
-      ?>
-      <!-- Product table -->
-      <div class="products">
-         <table class="tblproduct">
-            <form method="POST">
+   if (isset($_GET['delete'])) {
+      $id = $_GET['delete'];
+      mysqli_query($conn, "UPDATE rooms SET AVAILABILITY=0 WHERE pid = $id");
+      header('location:admin_page.php');
+   };
+   // Delete option
+   if (isset($_GET['del'])) {
+      $id = $_GET['del'];
+      mysqli_query($conn, "DELETE FROM rooms  WHERE RID = $id");
+      mysqli_query($conn, "ALTER TABLE rooms AUTO_INCREMENT = 1");
+      // ALTER TABLE products AUTO_INCREMENT = 1;
+      header('location:View_Rooms.php');
+   };
+   ?>
+   <!-- Product table -->
+   <div class="products">
+      <table class="tblproduct">
+         <form method="POST">
             <thead>
                <tr>
                   <th>RID</th>
@@ -48,16 +61,18 @@
                   <td><?php echo $row['PRICE'] ?>/-</td>
                   <td>
                      <a href="admin_update.php?edit=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-edit"></i> Update </a>
-                     
-                     <a href="admin_page.php?del=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-trash"></i> Availability </a>
+                     <a href="View_Rooms.php?del=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-trash"></i> Delete </a>
                   </td>
                </tr>
             <?php } ?>
-         </table>
-         </form>
-      </div>
+      </table>
+      </form>
+   </div>
 
    </div>
+
+
+
 
 
 </body>
