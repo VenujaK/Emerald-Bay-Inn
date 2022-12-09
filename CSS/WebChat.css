@@ -1,13 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zen+Dots&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+ :root {
+    --main-color: #FF9A00;
+    --text-color: #9e9c9c;
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
 body {
     background-color: #f3f2f3;
     margin: 0;
     padding: 0;
-    background: url(../assets/qwd83nc4xxf41.jpg);
+    /* background: url(../assets/qwd83nc4xxf41.jpg); */
 }
 
 .header {
     text-align: center;
-    color: #807c7c;
+    color: var(--main-color);
     text-shadow: 5px 5px 20px rgba(115, 113, 113, 0.219);
     font-size: 150%;
 }
@@ -24,14 +50,14 @@ li {
     box-shadow: 5px 5px 20px rgba(115, 113, 113, 0.219);
     border-radius: 10px;
     font-weight: 500;
-    color: #007BFF;
+    color: var(--main-color);
     width: 40%;
 }
 
 li span {
     font-style: normal;
     font-weight: bolder;
-    color: #007BFF;
+    color: var(--text-color);
 }
 
 #chat {
@@ -56,12 +82,12 @@ input {
 button {
     width: 25%;
     height: 38px;
-    background-color: #007BFF;
+    background-color: var(--main-color);
 }
 
 .sent {
     text-align: right;
-    background-color: #007BFF;
+    background-color: var(--main-color);
     box-shadow: 5px 5px 20px rgba(115, 113, 113, 0.219);
     margin-left: 50%;
     color: #ffffff;

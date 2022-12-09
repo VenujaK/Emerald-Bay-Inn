@@ -15,10 +15,10 @@
     <a href="./WebChat.html">
       <span>Queries</span>
     </a>
-    <a href="#">
+    <a href="./Staff_Bookings.php">
       <span>Bookings</span>
     </a>
-    <a href="#">
+    <a href="./Staff_Room_manage.php">
       <span>Availability</span>
     </a>
     

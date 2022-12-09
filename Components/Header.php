@@ -64,7 +64,7 @@
                             <li><a href="../Emerald-Bay-Inn/Offers.php"">Offers</a></li>
                             <li><a href="../Emerald-Bay-Inn/GalleryPage.php">Gallery</a></li>
                             <li><a href="../Emerald-Bay-Inn/Services.php">Services</a></li>
-                            <li><a href="../Emerald-Bay-Inn/Client_Bookings.php">Bookings</a></li>
+                            <li><a href="../Emerald-Bay-Inn/Client_Room_View.php">Bookings</a></li>
                             <li><a href="../Emerald-Bay-Inn/WebChat.html">Queries</a></li>
                            
                         </ul>

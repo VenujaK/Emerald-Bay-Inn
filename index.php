@@ -29,7 +29,7 @@
                     <img src="./Images/carousel 1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-warning">Book Now</button>
+                        <button type="button" onclick="booking()" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <img src="./Images/carousel 2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-warning">Book Now</button>
+                        <button type="button" onclick="booking()" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <img src="./Images/carousel 3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-warning">Book Now</button>
+                        <button type="button" onclick="booking()" class="btn btn-outline-warning">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                     <img src="http://island.lk/wp-content/uploads/2022/04/Granbell-Hotel.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" align="center" class="btn btn-outline-warning ">Book Now</button>
+                        <button type="button" onclick="booking()" align="center" class="btn btn-outline-warning ">Book Now</button>
                     </div>
                 </div>
             </div>
@@ -67,6 +67,10 @@
     <?php @include("./Components/Footer.php") ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+    function booking(){
+        window.location.replace("Client_Room_View.php");
+    }
+</script>
 
 </html>

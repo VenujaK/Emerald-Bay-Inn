@@ -14,26 +14,29 @@
 <body>
 <?php @include("./Components/Header.php") ?>
     <div class="card mb-3">
-        <img src="./Images/carousel 1.png" class="card-img-top img-fluid" alt="...">
+        <img src="https://nimvo.com/wp-content/uploads/2017/08/Purple-Bedroom-750x531.jpg" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
             <h5 class="card-title">Duluxe Rooms</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" onclick="booking()" align="center" class="btn btn-outline-warning ">Book Now</button>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
     <div class="card mb-3">
-        <img src="./Images/carousel 1.png" class="card-img-top img-fluid" alt="...">
+        <img src="https://i.pinimg.com/736x/c6/6f/b7/c66fb7b279a660e3daf84e7d32efdf07--luxury-rooms-luxury-living.jpg" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
             <h5 class="card-title">Luxury Rooms</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" onclick="booking()" align="center" class="btn btn-outline-warning ">Book Now</button>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
     <div class="card mb-3">
-        <img src="./Images/carousel 1.png" class="card-img-top img-fluid" alt="...">
+        <img src="https://content.r9cdn.net/himg/70/de/74/ice-98111-photo.aspx_did=2692_brochureid=98111_publicid=37388724_instanceid=10-image.jpg" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
             <h5 class="card-title">Normal Rooms</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" onclick="booking()" align="center" class="btn btn-outline-warning ">Book Now</button>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
@@ -42,6 +45,7 @@
         <div class="card-body">
             <h5 class="card-title">Villas</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" onclick="booking()" align="center" class="btn btn-outline-warning ">Book Now</button>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
     </div>
@@ -50,5 +54,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function booking(){
+        window.location.replace("Client_Room_View.php");
+    }
+</script>
 
 </html>
