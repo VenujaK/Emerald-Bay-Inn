@@ -17,7 +17,7 @@ if (isset($_POST['BOOK_ROOM'])) {
       $insert = "INSERT INTO serviceregister (SNAME, CNAME, DAYS, DATE, COUNT, CONTACT) VALUES('$sname', '$cname','$days','$date','$Peoplecount','$contact')";
       $upload = mysqli_query($conn, $insert);
       if ($upload) {        
-        header('location:index.php');
+        header('location:Thanks.php');
         echo '<script>alert("Booking Succesfull")</script>';
       } else {
          $message[] = 'could not book the Room';

@@ -17,7 +17,7 @@ if (isset($_POST['BOOK_ROOM'])) {
       $insert = "INSERT INTO bookings (RNO, CNAME, CNUMBER	,NIC ,CDAYS) VALUES('$rnumber', '$cname','$cnumber','$nic','$cdays')";
       $upload = mysqli_query($conn, $insert);
       if ($upload) {        
-        header('location:index.php');
+        header('location:Thanks.php');
         echo '<script>alert("Booking Succesfull")</script>';
       } else {
          $message[] = 'could not book the Room';
@@ -88,7 +88,7 @@ if (isset($_POST['BOOK_ROOM'])) {
 </body>
 <script>
    function ViewAllRooms(){
-      window.location.href =  "./Emerald-Bay-Inn/View_Rooms.php";
+      window.location.href =  "./Emerald-Bay-Inn/Thanks.php";
    }
 </script>
 </html>
