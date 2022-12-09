@@ -2,19 +2,19 @@
 
 
 @include 'config.php';
-$id = $_GET['edit'];
 // Product insert
 if (isset($_POST['BOOK_ROOM'])) {
-   $rnumber = $_POST['r_no'];
+   $sname = $_POST['s_type'];
    $cname = $_POST['c_name'];
-   $cnumber = $_POST['c_no'];
-   $nic = $_POST['c_nic'];
-   $cdays = $_POST['c_days'];
+   $days = $_POST['c_days'];
+   $date = $_POST['c_date'];
+   $Peoplecount = $_POST['s_people'];
+   $contact = $_POST['c_no'];
 
-   if (empty($rnumber) || empty($cname) || empty($cnumber) || empty($nic) || empty($cdays) ) {
+   if (empty($sname) || empty($cname) || empty($days) || empty($date) || empty($Peoplecount) || empty($contact) ) {
       $message[] = 'please fill out all';
    } else {
-      $insert = "INSERT INTO bookings (RNO, CNAME, CNUMBER	,NIC ,CDAYS) VALUES('$rnumber', '$cname','$cnumber','$nic','$cdays')";
+      $insert = "INSERT INTO serviceregister (SNAME, CNAME, DAYS, DATE, COUNT, CONTACT) VALUES('$sname', '$cname','$days','$date','$Peoplecount','$contact')";
       $upload = mysqli_query($conn, $insert);
       if ($upload) {        
         header('location:index.php');
@@ -41,35 +41,43 @@ if (isset($_POST['BOOK_ROOM'])) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Client Bookings </title>
+    <title> Service Register </title>
     <link rel="stylesheet" href="./CSS/admin.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="container">
-    <div class="title">Add Rooms</div>
+    <div class="title">Book Services</div>
     <div class="content">
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Room Number</span>
-            <input type="text" placeholder="enter Room number" name="r_no" value="<?php echo $id?>">
+            <span class="details">Service</span>
+            <select name="s_type" class="input-box box">
+               <option value="Day_Out">Day Out</option>
+               <option value="Birth_Day_Party">Birth Day Party</option>
+               <option value="Weddings">Weddings</option>
+            </select>
           </div>
           <div class="input-box">
-            <span class="details">Name</span>
+            <span class="details">Customer Name</span>
             <input type="text" placeholder="enter your name" name="c_name" >
           </div>
           <div class="input-box">
-            <span class="details">Contact Number</span>
+            <span class="details">No. Of Days</span>
+            <input type="text" placeholder="enter No. Of Days" name="c_days" >
+          </div>
+          <div class="input-box">
+            <span class="details">DATE</span>
+            <input type="text" placeholder="enter the date" name="c_date" >
+          </div>
+          <div class="input-box">
+            <span class="details">No of People</span>
+            <input type="text" placeholder="enter number of people" name="s_people" >
+          </div>
+          <div class="input-box">
+            <span class="details">Contact No</span>
             <input type="text" placeholder="enter contact number" name="c_no" >
-          </div>
-          <div class="input-box">
-            <span class="details">NIC</span>
-            <input type="text" placeholder="enter NIC number" name="c_nic" >
-          </div>
-          <div class="input-box">
-            <span class="details">No of Days</span>
-            <input type="text" placeholder="enter number of days" name="c_days" >
           </div>
           
         </div>
