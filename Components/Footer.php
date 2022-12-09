@@ -94,11 +94,11 @@
             </li>
         </ul>
         <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Manage</a></li>
+            <li class="menu__item"><a class="menu__link" href="../Emerald-Bay-Inn/index.php">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="../Emerald-Bay-Inn/AboutUs.php">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="../Emerald-Bay-Inn/Services.php">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="../Emerald-Bay-Inn/ContactUs.php">Contact</a></li>
+            <li class="menu__item"><a class="menu__link" href="../Emerald-Bay-Inn/Login.php">Login</a></li>
 
         </ul>
         <p>&copy;2022 Emerald Bay Inn | All Rights Reserved</p>
