@@ -21,6 +21,9 @@
     <a href="./Staff_Room_manage.php">
       <span>Availability</span>
     </a>
+    <a href="./Staff_Services.php">
+      <span>Services</span>
+    </a>
     
   </div>
   
