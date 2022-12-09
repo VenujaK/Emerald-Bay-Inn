@@ -84,8 +84,6 @@ if (isset($_POST['BOOK_ROOM'])) {
         
         <div class="button">
           <input type="submit" name="BOOK_ROOM" value="Book Now">
-      
-          
         </div>
       </form>
     </div>
