@@ -15,13 +15,13 @@
 			<form class="login">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="User name / Email">
+					<input type="text" class="login__input" placeholder="User name / Email" id="txtUser">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password">
+					<input type="password" class="login__input" placeholder="Password" id="txtPassword">
 				</div>
-				<button class="button login__submit">
+				<button class="button login__submit" onclick="getInfo()">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				
@@ -38,4 +38,41 @@
 </div>
     
 </body>
+<script>
+        var objPeople = [{
+                username: "admin",
+                password: "1234"
+            }, {
+                username: "admin2",
+                password: "1234"
+            }, {
+                username: "admin3",
+                password: "1234"
+            }
+
+        ]
+
+        function login(url) {
+            window.open("admin_page.php");
+        }
+
+        function getInfo() {
+            var username = document.getElementById('txtUser').value
+            var password = document.getElementById('txtPassword').value
+            console.log(username);
+            
+            if(username=="staff" && password=="1234"){
+                window.open("Staff_Interface.php");
+            }
+            for (var i = 0; i < objPeople.length; i++) {
+
+                if (username == objPeople[i].username && password == objPeople[i].password) {
+                    console.log(username + " is logged in!!!")
+                    login();
+                    return
+                }
+            }
+            console.log("incorrect username or password")
+        }
+    </script>
 </html>

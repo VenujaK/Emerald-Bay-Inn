@@ -70,7 +70,7 @@
                         </ul>
                     </div>
                     <div class="col nav-icons">
-                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <a href="../Emerald-Bay-Inn/Login.php"><i class="fa-solid fa-right-to-bracket" style="color: #FF9A00;"></i></a>
                     </div>
                 </div>
         </nav>
