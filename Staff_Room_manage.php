@@ -62,9 +62,9 @@
                <tr>
                   <td><?php echo $row['RID']; ?></td>
                   <td><?php echo $row['AVAILABILITY']; ?></td>
-                  <td><?php echo $row['TYPE'] ?>/-</td>
-                  <td><?php echo $row['AC'] ?>/-</td>
-                  <td><?php echo $row['PRICE'] ?>/-</td>
+                  <td><?php echo $row['TYPE'] ?></td>
+                  <td><?php echo $row['AC'] ?></td>
+                  <td><?php echo $row['PRICE'] ?></td>
                   <td>
                      <a href="Staff_Room_manage.php?yes=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-edit"></i> Available </a>
                      <a href="Staff_Room_manage.php?no=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-edit"></i> Not Available </a>

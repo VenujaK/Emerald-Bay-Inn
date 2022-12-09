@@ -52,9 +52,9 @@
                         <td></td>
                         <td><?php echo $row['RNO']; ?></td>
                         <td><?php echo $row['CNAME']; ?></td>
-                        <td><?php echo $row['CNUMBER'] ?>/-</td>
-                        <td><?php echo $row['NIC'] ?>/-</td>
-                        <td><?php echo $row['CDAYS'] ?>/-</td>
+                        <td><?php echo $row['CNUMBER'] ?></td>
+                        <td><?php echo $row['NIC'] ?></td>
+                        <td><?php echo $row['CDAYS'] ?></td>
 
                     </tr>
                 <?php } ?>

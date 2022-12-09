@@ -68,9 +68,9 @@
                <tr>
                   <td><?php echo $row['RID']; ?></td>
                   <td><?php echo $row['AVAILABILITY']; ?></td>
-                  <td><?php echo $row['TYPE'] ?>/-</td>
-                  <td><?php echo $row['AC'] ?>/-</td>
-                  <td><?php echo $row['PRICE'] ?>/-</td>
+                  <td><?php echo $row['TYPE'] ?></td>
+                  <td><?php echo $row['AC'] ?></td>
+                  <td><?php echo $row['PRICE'] ?></td>
                   <td>
                      <a href="Client_Bookings.php?edit=<?php echo $row['RID']; ?>" class="buttons"> <i class="fas fa-edit"></i> Book </a>
                      

@@ -53,11 +53,10 @@
                         <td></td>
                         <td><?php echo $row['SNAME']; ?></td>
                         <td><?php echo $row['CNAME']; ?></td>
-                        <td><?php echo $row['DAYS'] ?></td>
-                        <td><?php echo $row['DATE'] ?></td>
-                        <td><?php echo $row['COUNT'] ?></td>
-                        <td><?php echo $row['CONTACT'] ?></td>
-
+                        <td><?php echo $row['DAYS'] ;?></td>
+                        <td><?php echo $row['DATE']; ?></td>
+                        <td><?php echo $row['COUNT']; ?></td>
+                        <td><?php echo $row['CONTACT']; ?></td>
                     </tr>
                 <?php } ?>
         </table>
