@@ -47,7 +47,7 @@ if (isset($_POST['BOOK_ROOM'])) {
    </head>
 <body>
   <div class="container">
-    <div class="title">Add Rooms</div>
+    <div class="title">Book My Room</div>
     <div class="content">
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
         <div class="user-details">
